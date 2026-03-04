@@ -2,7 +2,6 @@ import React from 'react'
 import Hero from '../src/components/Hero'
 import ServicesGrid from '../src/components/ServicesGrid'
 import AboutSection from '../src/components/AboutSection'
-import StructureSection from '../src/components/StructureSection'
 import ClientsMarquee from '../src/components/ClientsMarquee'
 import LatestPosts from '../src/components/LatestPosts'
 import Newsletter from '../src/components/Newsletter'
@@ -19,18 +18,8 @@ export default function Home(){
 
       <AboutSection />
 
-      <StructureSection />
-
       <ClientsMarquee />
 
-      <section className="mt-12">
-        <h2 className="text-2xl font-semibold mb-4">Últimas notícias</h2>
-        <LatestPosts />
-      </section>
-
-      <div className="mt-12">
-        <Newsletter />
-      </div>
     </div>
   )
 }

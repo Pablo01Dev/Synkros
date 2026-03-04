@@ -1,23 +1,27 @@
 import React from 'react'
-import { site } from '../content/site'
 
-export default function AboutSection({ full }: { full?: boolean }){
+export default function AboutSection() {
   return (
-    <section className="mt-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-        <div>
-          <h2 className="text-2xl font-semibold">{site.company.name}</h2>
-          <p className="text-slate-600 mt-3">{site.company.description}</p>
-          <ul className="mt-4 list-disc pl-6 text-slate-600">
-            <li>Equipe técnica certificada</li>
-            <li>Projetos personalizados</li>
-            <li>Suporte e manutenção</li>
-          </ul>
-          {full && <p className="mt-4 text-slate-500">Informações adicionais sobre a história da empresa, missão e valores podem ser colocadas aqui.</p>}
-        </div>
-        <div>
-          <div className="h-56 bg-slate-50 rounded flex items-center justify-center">Foto/Ilustração Placeholder</div>
-        </div>
+    <section className="mt-12 w-full flex justify-center px-4">
+      {/* Abaixo: w-[80%] define a largura e mx-auto centraliza. 
+          Removi a div max-w-4xl externa para não dar conflito de larguras.
+      */}
+      <div className="relative h-[420px] w-full md:w-[50%] mx-auto overflow-hidden rounded-xl shadow-2xl bg-black">
+        
+        <video
+          src="/placeholders/video-sobre.mp4"
+          /* O object-cover aqui vai garantir que as barras laterais 
+             do vídeo original sumam, preenchendo todo o espaço.
+          */
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          Seu navegador não suporta vídeos.
+        </video>
+
       </div>
     </section>
   )

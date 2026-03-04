@@ -26,14 +26,11 @@ export default function ServicesGrid({ services, showAll }: { services: Service[
       {list.map(s => (
         <div key={s.slug} className="card hover:shadow-md">
           <div className="flex items-center gap-4">
-            <div className="p-3 bg-slate-50 rounded">{iconMap[s.icon] || <Wrench />}</div>
+            <div className="p-3 bg-[#41CC79] rounded">{iconMap[s.icon] || <Wrench />}</div>
             <div>
               <h3 className="font-semibold">{s.title}</h3>
               <p className="text-slate-600 text-sm">{s.shortDescription}</p>
             </div>
-          </div>
-          <div className="mt-4">
-            <Link href={`/servicos/${s.slug}`} className="text-accent">Ver serviço →</Link>
           </div>
         </div>
       ))}
