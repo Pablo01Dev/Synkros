@@ -7,10 +7,11 @@ import LatestPosts from '../src/components/LatestPosts'
 import Newsletter from '../src/components/Newsletter'
 import { site } from '../src/content/site'
 
-export default function Home(){
+export default function Home() {
   return (
     <div className="container mx-auto px-6 py-12">
       <Hero />
+
       <section className="mt-12">
         <h2 className="text-2xl font-semibold mb-4">Nossos Serviços</h2>
         <ServicesGrid services={site.services} />
@@ -23,3 +24,4 @@ export default function Home(){
     </div>
   )
 }
+
