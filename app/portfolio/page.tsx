@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import Link from 'next/link'
 import { site } from '../../src/content/site'
 
@@ -10,10 +10,11 @@ export default function Portfolio(){
         {site.portfolio.map(p => (
           <Link key={p.slug} href={`/portfolio/${p.slug}`} className="card hover:shadow-md">
             <h3 className="text-xl font-semibold">{p.title}</h3>
-            <p className="text-slate-600">{p.subtitle}</p>
+            <p className="text-slate-300">{p.subtitle}</p>
           </Link>
         ))}
       </div>
     </div>
   )
 }
+

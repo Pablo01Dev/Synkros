@@ -7,7 +7,7 @@ export default function ClientsGrid() {
 
   return (
     <section className="mt-12 px-4">
-      <h3 className="text-xl font-semibold mb-8 text-center text-slate-800">
+      <h3 className="text-xl font-semibold mb-8 text-center text-slate-100">
         Alguns clientes
       </h3>
 
@@ -16,7 +16,7 @@ export default function ClientsGrid() {
         {logos.map((logo, i) => (
           <div
             key={i}
-            className="w-40 h-24 bg-white border border-slate-100 rounded-xl flex items-center justify-center p-6 shadow-sm hover:shadow-md transition-shadow"
+            className="w-40 h-24 bg-slate-900 border border-slate-700 rounded-xl flex items-center justify-center p-6 shadow-sm hover:shadow-md transition-shadow"
           >
             <img
               src={`/placeholders/${logo}`}

@@ -1,7 +1,7 @@
 import React from 'react'
 import NeuralNetworkGrid from './NeuralNetworkGrid'
 
-export default function AboutSection() {
+export default function AboutSection({ full = false }: { full?: boolean }) {
   return (
     <section className="relative mt-12 w-full min-h-[500px] flex items-center justify-center px-4 overflow-hidden">
       
@@ -18,7 +18,7 @@ export default function AboutSection() {
           - relative: Para o z-index funcionar.
           - max-w: Para ele não ocupar a tela toda e deixar a malha aparecer nas bordas.
       */}
-      <div className="relative z-10 w-full md:w-[45%] aspect-video rounded-xl shadow-xl overflow-hidden border border-white/10">
+      <div className={`relative z-10 w-full ${full ? 'md:w-[70%]' : 'md:w-[45%]'} aspect-video rounded-xl shadow-xl overflow-hidden border border-white/10`}>
         <video
           src="/placeholders/video-sobre.mp4"
           autoPlay

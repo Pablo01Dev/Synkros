@@ -14,8 +14,8 @@ export default function LatestPosts(){
       {staticPosts.map(p=> (
         <Link key={p.slug} href={`/blog/${p.slug}`} className="card">
           <h4 className="font-semibold">{p.title}</h4>
-          <p className="text-slate-600 text-sm">{p.description}</p>
-          <div className="text-xs text-slate-400 mt-2">{p.date}</div>
+          <p className="text-slate-300 text-sm">{p.description}</p>
+          <div className="text-xs text-slate-500 mt-2">{p.date}</div>
         </Link>
       ))}
     </div>

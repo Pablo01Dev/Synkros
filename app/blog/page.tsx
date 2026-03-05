@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'next/link'
+﻿import React from 'react'
 import { getAllPosts } from '../../lib/posts'
+import Link from 'next/link'
 
 export default function BlogPage(){
   const posts = getAllPosts()
@@ -11,11 +11,12 @@ export default function BlogPage(){
         {posts.map(p => (
           <Link key={p.slug} href={`/blog/${p.slug}`} className="card">
             <h3 className="text-xl font-semibold">{p.title}</h3>
-            <p className="text-slate-600">{p.description}</p>
-            <div className="text-sm text-slate-400 mt-2">{p.date}</div>
+            <p className="text-slate-300">{p.description}</p>
+            <div className="text-sm text-slate-500 mt-2">{p.date}</div>
           </Link>
         ))}
       </div>
     </div>
   )
 }
+
