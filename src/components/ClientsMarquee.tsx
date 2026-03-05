@@ -16,7 +16,7 @@ export default function ClientsGrid() {
         {logos.map((logo, i) => (
           <div
             key={i}
-            className="w-40 h-24 bg-slate-900 border border-slate-700 rounded-xl flex items-center justify-center p-6 shadow-sm hover:shadow-md transition-shadow"
+            className="w-40 h-24 bg-slate-100 border border-slate-700 rounded-xl flex items-center justify-center p-6 shadow-sm hover:shadow-md transition-shadow"
           >
             <img
               src={`/placeholders/${logo}`}

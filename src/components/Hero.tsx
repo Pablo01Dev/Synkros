@@ -6,7 +6,7 @@ import IllustrationSVG from './IllustrationSVG'
 
 export default function Hero() {
   return (
-    <section className="relative rounded-lg overflow-hidden bg-gradient-to-r from-[#051A00] to-slate-950 border border-slate-800 p-8">
+    <section className="relative rounded-lg overflow-hidden  border border-slate-800 p-8">
       <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           <div>
