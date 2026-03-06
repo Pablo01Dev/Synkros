@@ -6,8 +6,12 @@ import IllustrationSVG from './IllustrationSVG'
 
 export default function Hero() {
   return (
-    <section className="relative rounded-lg overflow-hidden  border border-slate-800 p-8">
-      <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+    <section
+      className="relative rounded-lg overflow-hidden border border-slate-800 p-8 bg-cover bg-center"
+      style={{ backgroundImage: "url('/placeholders/portfolio-1.png')" }}
+      >
+      <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
+      <motion.div className="relative z-10" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-extrabold">
@@ -23,7 +27,7 @@ export default function Hero() {
           </div>
 
           <div className="hidden md:block">
-            <div className="bg-gradient-to-tr from-accent/20 to-slate-800 rounded-lg flex items-center justify-center">
+            <div className="flex items-center justify-center">
               <IllustrationSVG className="w-full h-full max-h-[360px] object-contain" />
             </div>
           </div>
