@@ -21,7 +21,7 @@ export default function ClientsGrid() {
             <img
               src={`/placeholders/${logo}`}
               alt={`Cliente ${i + 1}`}
-              className="max-w-full max-h-full object-contain"
+              className="max-w-full max-h-full object-contain grayscale opacity-100 transition-all duration-300 hover:grayscale-0 hover:opacity-100"
             />
           </div>
         ))}
