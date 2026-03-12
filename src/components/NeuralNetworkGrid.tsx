@@ -1,5 +1,6 @@
-"use client";
+﻿"use client";
 import React, { useRef, useEffect } from 'react';
+import styles from './NeuralNetworkGrid.module.css'
 
 export default function NeuralNetworkGrid() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -12,12 +13,10 @@ export default function NeuralNetworkGrid() {
 
     let animationFrameId: number;
     const particles: any[] = [];
-    // Aumentei para 60 pontos já que a área agora é maior (o fundo da seção)
-    const particleCount = 60; 
+    const particleCount = 60;
     const connectionDistance = 200;
 
     const resize = () => {
-      // Pega o tamanho da seção inteira ou da janela
       canvas.width = window.innerWidth;
       canvas.height = canvas.parentElement?.offsetHeight || 600;
     };
@@ -27,7 +26,7 @@ export default function NeuralNetworkGrid() {
       y = Math.random() * 800;
       vx = (Math.random() - 0.5) * 0.5;
       vy = (Math.random() - 0.5) * 0.5;
-      radius = Math.random() * 3 + 2; 
+      radius = Math.random() * 3 + 2;
 
       update() {
         this.x += this.vx;
@@ -44,10 +43,8 @@ export default function NeuralNetworkGrid() {
     };
 
     const draw = () => {
-      // Fundo escuro transparente para não matar o fundo do site
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
-      ctx.lineWidth = 1.8; 
+      ctx.lineWidth = 1.8;
 
       for (let i = 0; i < particles.length; i++) {
         const p1 = particles[i];
@@ -55,7 +52,7 @@ export default function NeuralNetworkGrid() {
 
         ctx.beginPath();
         ctx.arc(p1.x, p1.y, p1.radius, 0, Math.PI * 2);
-        ctx.fillStyle = '#00ff66'; 
+        ctx.fillStyle = '#00ff66';
         ctx.fill();
 
         for (let j = i + 1; j < particles.length; j++) {
@@ -86,5 +83,5 @@ export default function NeuralNetworkGrid() {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="w-full h-full block" />;
+  return <canvas ref={canvasRef} className={styles.canvas} />;
 }

@@ -1,11 +1,11 @@
 ﻿import React from 'react'
+import styles from '../pageLayout.module.css'
 
-export default function Parcerias(){
+export default function Parcerias() {
   return (
-    <div className="container mx-auto px-6 py-12">
-      <h1 className="text-3xl font-bold mb-4">Parcerias</h1>
-      <p className="text-slate-300">Trabalhamos com parceiros estratégicos para entregar soluções completas.</p>
+    <div className={styles.container}>
+      <h1 className={styles.title}>Parcerias</h1>
+      <p className={styles.subtitle}>Trabalhamos com parceiros estrategicos para entregar solucoes completas.</p>
     </div>
   )
 }
-

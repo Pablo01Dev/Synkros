@@ -1,6 +1,40 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+﻿:root {
+  --background: #000000;
+  --foreground: #f1f5f9;
+  --card: #1a2231;
+  --card-foreground: #f1f5f9;
+  --primary: #27b561;
+  --primary-foreground: #07140d;
+  --muted: #202938;
+  --muted-foreground: #b7c4d6;
+  --accent: #41cc79;
+  --accent-foreground: #07140d;
+  --border: #2e3a4c;
+  --input: #2e3a4c;
+  --radius: 8px;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #fafafa;
+  --card: #131313;
+  --card-foreground: #fafafa;
+  --primary: #fafafa;
+  --primary-foreground: #161616;
+  --muted: #262626;
+  --muted-foreground: #a3a3a3;
+  --accent: #262626;
+  --accent-foreground: #fafafa;
+  --border: #262626;
+  --input: #262626;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border-color: var(--border);
+}
 
 html,
 body {
@@ -9,72 +43,18 @@ body {
 }
 
 body {
-  @apply antialiased bg-background text-foreground;
+  background: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* focus visible */
-:focus {
-  outline: 2px solid rgba(14, 165, 164, 0.15);
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid rgba(39, 181, 97, 0.3);
   outline-offset: 2px;
-}
-
-/* (opcional) classe utilitária antiga; pode remover depois */
-.card {
-  @apply bg-card border border-border rounded-lg p-6 shadow-sm;
-}
-
-@layer base {
-  :root {
-    --background: 222 47% 8%;
-    --foreground: 210 40% 96%;
-    --card: 222 32% 12%;
-    --card-foreground: 210 40% 96%;
-    --popover: 222 32% 12%;
-    --popover-foreground: 210 40% 96%;
-    --primary: 142 72% 45%;
-    --primary-foreground: 222 47% 8%;
-    --secondary: 223 25% 18%;
-    --secondary-foreground: 210 40% 96%;
-    --muted: 223 25% 18%;
-    --muted-foreground: 215 20% 72%;
-    --accent: 142 72% 45%;
-    --accent-foreground: 222 47% 8%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 223 20% 26%;
-    --input: 223 20% 26%;
-    --ring: 142 72% 45%;
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-  }
-
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-    background-image: radial-gradient(circle at top right, rgba(65, 204, 121, 0.18), transparent 40%);
-  }
 }

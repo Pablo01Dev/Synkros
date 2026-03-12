@@ -1,0 +1,53 @@
+﻿.section {
+  margin-top: 3rem;
+  padding: 0 1rem;
+}
+
+.title {
+  margin: 0 0 2rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.logoCard {
+  width: 10rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  background: #f1f5f9;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.2s ease;
+}
+
+.logoCard:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 1;
+  transition: filter 0.3s ease;
+}
+
+.logo:hover {
+  filter: grayscale(0);
+}

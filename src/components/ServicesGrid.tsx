@@ -1,7 +1,7 @@
-import Link from 'next/link'
-import React from 'react'
+﻿import React from 'react'
 import { Service } from '../content/site'
 import { Home, Cpu, Wifi, Shield, Lock, Zap, Wrench, Music, Battery, Phone } from 'lucide-react'
+import styles from './ServicesGrid.module.css'
 
 const iconMap: Record<string, React.ReactNode> = {
   SmartHome: <Home />,
@@ -17,19 +17,19 @@ const iconMap: Record<string, React.ReactNode> = {
   Phone: <Phone />
 }
 
-export default function ServicesGrid({ services, showAll }: { services: Service[], showAll?: boolean }) {
-  // por padrão mostramos 6 itens na home para melhor visual
+export default function ServicesGrid({ services, showAll }: { services: Service[]; showAll?: boolean }) {
   const defaultCount = 6
   const list = showAll ? services : services.slice(0, defaultCount)
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {list.map(s => (
-        <div key={s.slug} className="card hover:shadow-md">
-          <div className="flex items-center gap-4">
-            <div className="p-3 bg-[#41CC79] rounded">{iconMap[s.icon] || <Wrench />}</div>
+    <div className={styles.grid}>
+      {list.map((s) => (
+        <div key={s.slug} className={styles.card}>
+          <div className={styles.row}>
+            <div className={styles.iconWrap}>{iconMap[s.icon] || <Wrench />}</div>
             <div>
-              <h3 className="font-semibold">{s.title}</h3>
-              <p className="text-slate-300 text-sm">{s.shortDescription}</p>
+              <h3 className={styles.title}>{s.title}</h3>
+              <p className={styles.description}>{s.shortDescription}</p>
             </div>
           </div>
         </div>

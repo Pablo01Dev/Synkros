@@ -3,32 +3,33 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import IllustrationSVG from './IllustrationSVG'
+import styles from './Hero.module.css'
 
 export default function Hero() {
   return (
-    <section
-      className="relative rounded-lg overflow-hidden border border-slate-800 p-8 bg-cover bg-center"
-      style={{ backgroundImage: "url('/placeholders/portfolio-1.png')" }}
+    <section className={styles.hero} style={{ backgroundImage: "url('/placeholders/portfolio-1.png')" }}>
+      <div className={styles.overlay} aria-hidden="true" />
+      <motion.div
+        className={styles.content}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
       >
-      <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
-      <motion.div className="relative z-10" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        <div className={styles.grid}>
           <div>
-            <h1 className="text-4xl md:text-5xl font-extrabold">
-              Automação e infraestrutura com foco em resultado
-            </h1>
-            <p className="text-slate-300 mt-4">
-              Soluções sob medida para residências e empresas, integradas, seguras e fáceis de usar.
+            <h1 className={styles.title}>Automacao e infraestrutura com foco em resultado</h1>
+            <p className={styles.description}>
+              Solucoes sob medida para residencias e empresas, integradas, seguras e faceis de usar.
             </p>
-            <div className="mt-6 flex gap-3">
-              <Link href="/empresa" className="px-4 py-2 bg-accent text-accent-foreground rounded">Saiba mais</Link>
-              <Link href="/contato" className="px-4 py-2 border border-slate-600 text-slate-100 rounded">Orçamento</Link>
+            <div className={styles.actions}>
+              <Link href="/empresa" className={styles.primaryButton}>Saiba mais</Link>
+              <Link href="/contato" className={styles.secondaryButton}>Orcamento</Link>
             </div>
           </div>
 
-          <div className="hidden md:block">
-            <div className="flex items-center justify-center">
-              <IllustrationSVG className="w-full h-full max-h-[360px] object-contain" />
+          <div className={styles.illustrationCol}>
+            <div className={styles.illustrationWrap}>
+              <IllustrationSVG className={styles.illustration} />
             </div>
           </div>
         </div>
@@ -36,4 +37,3 @@ export default function Hero() {
     </section>
   )
 }
-

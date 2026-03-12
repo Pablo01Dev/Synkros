@@ -1,10 +1,11 @@
-import React from 'react'
+﻿import React from 'react'
 import AboutSection from '../../src/components/AboutSection'
+import styles from '../pageLayout.module.css'
 
-export default function Empresa(){
+export default function Empresa() {
   return (
-    <div className="container mx-auto px-6 py-12">
-      <h1 className="text-3xl font-bold mb-4">A Empresa</h1>
+    <div className={styles.container}>
+      <h1 className={styles.title}>A Empresa</h1>
       <AboutSection full />
     </div>
   )

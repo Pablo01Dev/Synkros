@@ -1,8 +1,9 @@
-"use client"
-import React from "react"
-import { motion } from "framer-motion"
-import { BatteryCharging, Bluetooth, Fingerprint, Home, ShieldCheck, Smartphone, Volume2 } from "lucide-react"
-import type { LucideIcon } from "lucide-react"
+﻿"use client"
+import React from 'react'
+import { motion } from 'framer-motion'
+import { BatteryCharging, Bluetooth, Fingerprint, Home, ShieldCheck, Smartphone, Volume2 } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
+import styles from './IllustrationSVG.module.css'
 
 type IllustrationSVGProps = {
   className?: string
@@ -34,11 +35,11 @@ const links = [
   [512, 320, 680, 500]
 ]
 
-export default function IllustrationSVG({ className = "" }: IllustrationSVGProps) {
+export default function IllustrationSVG({ className = '' }: IllustrationSVGProps) {
   return (
     <motion.svg
       viewBox="0 0 1024 640"
-      className={`${className} select-none`}
+      className={`${className} ${styles.selectNone}`}
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
@@ -70,14 +71,8 @@ export default function IllustrationSVG({ className = "" }: IllustrationSVGProps
           <circle cx={n.x} cy={n.y} r={n.r} fill="#0f172a" stroke="#e2e8f0" strokeWidth="3" />
           <circle cx={n.x} cy={n.y} r={n.r - 12} fill="#22c55e" />
           <circle cx={n.x} cy={n.y} r={n.r - 27} fill="#16a34a" />
-          <foreignObject
-            x={n.x - 19}
-            y={n.y - 19}
-            width={38}
-            height={38}
-            style={{ pointerEvents: "none" }}
-          >
-            <div className="w-[38px] h-[38px] flex items-center justify-center text-slate-950">
+          <foreignObject x={n.x - 19} y={n.y - 19} width={38} height={38} style={{ pointerEvents: 'none' }}>
+            <div className={styles.iconBox}>
               <n.icon size={n.r > 60 ? 32 : 28} strokeWidth={2.7} />
             </div>
           </foreignObject>

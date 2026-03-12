@@ -1,18 +1,27 @@
 ﻿import React from 'react'
 import { site } from '../../../src/content/site'
+import styles from '../../pageLayout.module.css'
 
-export default function CasePage({ params }: { params: { slug: string } }){
-  const item = site.portfolio.find(p=>p.slug===params.slug)
-  if(!item) return <div className="container mx-auto px-6 py-12">Case não encontrado</div>
+export default function CasePage({ params }: { params: { slug: string } }) {
+  const item = site.portfolio.find((p) => p.slug === params.slug)
+
+  if (!item) {
+    return <div className={styles.error}>Case nao encontrado</div>
+  }
 
   return (
-    <div className="container mx-auto px-6 py-12">
-      <h1 className="text-3xl font-bold mb-2">{item.title}</h1>
-      <p className="text-slate-300 mb-4">{item.subtitle}</p>
-      <div className="mb-6"><strong>Desafio:</strong> {item.challenge}</div>
-      <div className="mb-6"><strong>Solução:</strong> {item.solution}</div>
-      <div className="mb-6"><strong>Resultado:</strong> {item.result}</div>
+    <div className={styles.container}>
+      <h1 className={styles.title}>{item.title}</h1>
+      <p className={`${styles.cardText} ${styles.spaced}`}>{item.subtitle}</p>
+      <div className={styles.spaced}>
+        <strong>Desafio:</strong> {item.challenge}
+      </div>
+      <div className={styles.spaced}>
+        <strong>Solucao:</strong> {item.solution}
+      </div>
+      <div className={styles.spaced}>
+        <strong>Resultado:</strong> {item.result}
+      </div>
     </div>
   )
 }
-

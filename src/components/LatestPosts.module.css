@@ -1,0 +1,35 @@
+﻿.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  border: 1px solid #334155;
+  border-radius: 12px;
+  background: #111827;
+  padding: 1.5rem;
+}
+
+.title {
+  margin: 0;
+  font-weight: 600;
+}
+
+.description {
+  margin: 0.5rem 0 0;
+  color: #cbd5e1;
+  font-size: 0.875rem;
+}
+
+.meta {
+  margin-top: 0.5rem;
+  color: #64748b;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

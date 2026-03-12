@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import React from 'react'
 import { SiteHeader } from '../src/components/Navbar'
 import { Footer } from '../src/components/Footer'
+import styles from './layout.module.css'
 
 export const metadata = {
   title: 'Dlap Automação - Tecnologia e Automação',
@@ -13,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pt-BR" className="dark">
       <body>
         <SiteHeader />
-        <main className="pt-[80px] md:pt-[96px] min-h-[60vh]">{children}</main>
+        <main className={styles.main}>{children}</main>
         <Footer />
       </body>
     </html>

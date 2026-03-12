@@ -1,0 +1,47 @@
+﻿.footer {
+  margin-top: 3rem;
+  border-top: 1px solid #1f2937;
+  background: #020617;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+.title,
+.subtitleTitle {
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+}
+
+.text,
+.link {
+  color: #cbd5e1;
+  font-size: 0.875rem;
+}
+
+.link {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.copy {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
