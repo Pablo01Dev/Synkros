@@ -1,0 +1,21 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/layout",{
+
+/***/ "(app-pages-browser)/./src/components/Navbar.module.css":
+/*!******************************************!*\
+  !*** ./src/components/Navbar.module.css ***!
+  \******************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+eval(__webpack_require__.ts("// extracted by mini-css-extract-plugin\nmodule.exports = {\"header\":\"Navbar_header__vG7Lu\",\"container\":\"Navbar_container__R6vwY\",\"brand\":\"Navbar_brand__XNsQP\",\"logo\":\"Navbar_logo__UM0Ax\",\"desktopNav\":\"Navbar_desktopNav__Za2sj\",\"navLink\":\"Navbar_navLink__id1IU\",\"servicesButton\":\"Navbar_servicesButton__LAneZ\",\"servicesGroup\":\"Navbar_servicesGroup__uymq5\",\"dropdown\":\"Navbar_dropdown__ztbRD\",\"dropdownLink\":\"Navbar_dropdownLink__JHdja\",\"actions\":\"Navbar_actions__1ikpw\",\"whatsappDesktop\":\"Navbar_whatsappDesktop__0sHcS\",\"whatsappMobile\":\"Navbar_whatsappMobile__L6wl1\",\"menuButton\":\"Navbar_menuButton__6Djq2\",\"mobileMenu\":\"Navbar_mobileMenu__g3FB_\",\"mobileContent\":\"Navbar_mobileContent__cV_hW\"};\n    if(true) {\n      // 1773434644286\n      var cssReload = __webpack_require__(/*! ./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js */ \"(app-pages-browser)/./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js\")(module.id, {\"publicPath\":\"/_next/\",\"esModule\":false,\"locals\":true});\n      module.hot.dispose(cssReload);\n      \n    }\n  \nmodule.exports.__checksum = \"f841f0de5aa9\"\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL3NyYy9jb21wb25lbnRzL05hdmJhci5tb2R1bGUuY3NzIiwibWFwcGluZ3MiOiJBQUFBO0FBQ0Esa0JBQWtCO0FBQ2xCLE9BQU8sSUFBVTtBQUNqQjtBQUNBLHNCQUFzQixtQkFBTyxDQUFDLHdNQUEySCxjQUFjLHNEQUFzRDtBQUM3TixNQUFNLFVBQVU7QUFDaEI7QUFDQTtBQUNBO0FBQ0EseUJBQXlCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vX05fRS8uL3NyYy9jb21wb25lbnRzL05hdmJhci5tb2R1bGUuY3NzPzQ5OGEiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5tb2R1bGUuZXhwb3J0cyA9IHtcImhlYWRlclwiOlwiTmF2YmFyX2hlYWRlcl9fdkc3THVcIixcImNvbnRhaW5lclwiOlwiTmF2YmFyX2NvbnRhaW5lcl9fUjZ2d1lcIixcImJyYW5kXCI6XCJOYXZiYXJfYnJhbmRfX1hOc1FQXCIsXCJsb2dvXCI6XCJOYXZiYXJfbG9nb19fVU0wQXhcIixcImRlc2t0b3BOYXZcIjpcIk5hdmJhcl9kZXNrdG9wTmF2X19aYTJzalwiLFwibmF2TGlua1wiOlwiTmF2YmFyX25hdkxpbmtfX2lkMUlVXCIsXCJzZXJ2aWNlc0J1dHRvblwiOlwiTmF2YmFyX3NlcnZpY2VzQnV0dG9uX19MQW5lWlwiLFwic2VydmljZXNHcm91cFwiOlwiTmF2YmFyX3NlcnZpY2VzR3JvdXBfX3V5bXE1XCIsXCJkcm9wZG93blwiOlwiTmF2YmFyX2Ryb3Bkb3duX196dGJSRFwiLFwiZHJvcGRvd25MaW5rXCI6XCJOYXZiYXJfZHJvcGRvd25MaW5rX19KSGRqYVwiLFwiYWN0aW9uc1wiOlwiTmF2YmFyX2FjdGlvbnNfXzFpa3B3XCIsXCJ3aGF0c2FwcERlc2t0b3BcIjpcIk5hdmJhcl93aGF0c2FwcERlc2t0b3BfXzBzSGNTXCIsXCJ3aGF0c2FwcE1vYmlsZVwiOlwiTmF2YmFyX3doYXRzYXBwTW9iaWxlX19MNndsMVwiLFwibWVudUJ1dHRvblwiOlwiTmF2YmFyX21lbnVCdXR0b25fXzZEanEyXCIsXCJtb2JpbGVNZW51XCI6XCJOYXZiYXJfbW9iaWxlTWVudV9fZzNGQl9cIixcIm1vYmlsZUNvbnRlbnRcIjpcIk5hdmJhcl9tb2JpbGVDb250ZW50X19jVl9oV1wifTtcbiAgICBpZihtb2R1bGUuaG90KSB7XG4gICAgICAvLyAxNzczNDM0NjQ0Mjg2XG4gICAgICB2YXIgY3NzUmVsb2FkID0gcmVxdWlyZShcIkM6L1VzZXJzL3BhYmxvL0Rlc2t0b3AvVGVjaC9kbGFwL0RsYXAvbm9kZV9tb2R1bGVzL25leHQvZGlzdC9jb21waWxlZC9taW5pLWNzcy1leHRyYWN0LXBsdWdpbi9obXIvaG90TW9kdWxlUmVwbGFjZW1lbnQuanNcIikobW9kdWxlLmlkLCB7XCJwdWJsaWNQYXRoXCI6XCIvX25leHQvXCIsXCJlc01vZHVsZVwiOmZhbHNlLFwibG9jYWxzXCI6dHJ1ZX0pO1xuICAgICAgbW9kdWxlLmhvdC5kaXNwb3NlKGNzc1JlbG9hZCk7XG4gICAgICBcbiAgICB9XG4gIFxubW9kdWxlLmV4cG9ydHMuX19jaGVja3N1bSA9IFwiZjg0MWYwZGU1YWE5XCJcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(app-pages-browser)/./src/components/Navbar.module.css\n"));
+
+/***/ })
+
+});

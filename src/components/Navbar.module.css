@@ -6,8 +6,8 @@
   z-index: 40;
   height: 80px;
   color: #f1f5f9;
-  background: rgba(2, 6, 23, 0.85);
-  border-bottom: 1px solid #1f2937;
+  background: rgba(15, 15, 15, 0.85);
+  border-bottom: 1px solid #303030;
   backdrop-filter: blur(8px);
 }
 
@@ -30,6 +30,8 @@
 .logo {
   display: block;
   padding: 0.25rem;
+  width: 180px;
+  height: auto;
 }
 
 .desktopNav {

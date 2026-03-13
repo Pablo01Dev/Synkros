@@ -1,7 +1,7 @@
 ﻿.footer {
   margin-top: 3rem;
-  border-top: 1px solid #1f2937;
-  background: #020617;
+  border-top: 1px solid #303030;
+  background: rgba(15, 15, 15, 0.85);
 }
 
 .container {

@@ -1,7 +1,7 @@
 ﻿:root {
   --background: #000000;
   --foreground: #f1f5f9;
-  --card: #1a2231;
+  --card: #191a1c;
   --card-foreground: #f1f5f9;
   --primary: #27b561;
   --primary-foreground: #07140d;
@@ -57,4 +57,17 @@ a {
 :focus-visible {
   outline: 2px solid rgba(39, 181, 97, 0.3);
   outline-offset: 2px;
+}
+
+h1,
+h2,
+p,
+h3,
+link,
+a {
+  font-family: Noto Sans, sans-serif;
+}
+
+p {
+  font-size: 1rem;
 }

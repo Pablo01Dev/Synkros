@@ -1,0 +1,195 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/components/AboutSection.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.AboutSection_section__yqyHJ {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  margin-top: 4rem;
+  overflow: hidden;
+}
+
+.AboutSection_background__2Qsq5 {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.45;
+}
+
+.AboutSection_videoWrapper__Vs0on {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.AboutSection_compact__JfMSK {
+  max-width: 45%;
+}
+
+.AboutSection_full__j0T6P {
+  max-width: 70%;
+}
+
+.AboutSection_video__5gPWY {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.AboutSection_overlay__Yz51_ {
+  position: absolute;
+  inset: 0;
+  background: rgba(34, 197, 94, 0.05);
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+@media (max-width: 767px) {
+  .AboutSection_compact__JfMSK,
+  .AboutSection_full__j0T6P {
+    max-width: 100%;
+  }
+}
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/pageLayout.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+.pageLayout_container__GLErL {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.pageLayout_title__Ra3Uh {
+  margin: 0 0 1rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.pageLayout_subtitle__vkKNY {
+  margin: 0 0 1.5rem;
+  color: #cbd5e1;
+}
+
+.pageLayout_gridTwo__vG7Ft {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+.pageLayout_card__dtacX {
+  border: 1px solid #334155;
+  border-radius: 12px;
+  background: #111827;
+  padding: 1.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.2s ease;
+}
+
+.pageLayout_card__dtacX:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.pageLayout_cardTitle__tOGBv {
+  margin: 0 0 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.pageLayout_cardText__pMKKO {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.pageLayout_meta__r0nHV {
+  margin-top: 0.5rem;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.pageLayout_smallMeta__ThUrO {
+  margin-top: 0.5rem;
+  color: #64748b;
+  font-size: 0.75rem;
+}
+
+.pageLayout_section__WN_24 {
+  margin-top: 3rem;
+}
+
+.pageLayout_sectionTitle__HA_P9 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.pageLayout_error__9olx5 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.pageLayout_bodyText__0KpaW {
+  color: #e2e8f0;
+}
+
+.pageLayout_bulletList__qfLLV {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: #e2e8f0;
+}
+
+.pageLayout_spaced__qbPG8 {
+  margin: 0 0 1.5rem;
+}
+
+.pageLayout_article__nw9Kh {
+  max-width: none;
+}
+
+.pageLayout_article__nw9Kh h1,
+.pageLayout_article__nw9Kh h2,
+.pageLayout_article__nw9Kh h3,
+.pageLayout_article__nw9Kh h4 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.pageLayout_article__nw9Kh p,
+.pageLayout_article__nw9Kh li {
+  color: #dbe4f0;
+  line-height: 1.7;
+}
+
+.pageLayout_article__nw9Kh ul,
+.pageLayout_article__nw9Kh ol {
+  padding-left: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .pageLayout_gridTwo__vG7Ft {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/components/NeuralNetworkGrid.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.NeuralNetworkGrid_canvas__yDjyg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+

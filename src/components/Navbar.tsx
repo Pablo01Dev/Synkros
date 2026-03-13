@@ -13,7 +13,7 @@ export function SiteHeader() {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link href="/" className={styles.brand}>
-          <Image src="/logo.svg" alt="logo" width={200} height={36} className={styles.logo} />
+          <Image src="/logo.svg" alt="logo" width={300} height={36} className={styles.logo} />
         </Link>
 
         <nav className={styles.desktopNav}>
