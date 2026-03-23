@@ -1,8 +1,8 @@
 export const site = {
   company: {
     name: 'Dlap Automação',
-    slogan: 'Tecnologia prática para espaços inteligentes',
-    description: 'Projetamos e implementamos soluções de automação, redes e infraestrutura tecnológica para empresas e residências.'
+    slogan: 'Tecnologia para espaços inteligentes',
+    description: 'Projetamos soluções de automação, redes e infraestrutura tecnológica para residências e empresas.'
   },
   contacts: {
     whatsappNumber: '+5511999999999',
@@ -12,65 +12,65 @@ export const site = {
   },
   services: [
     {
-      slug: 'automação-residencial-comercial',
-      title: 'Automação Residencial e Comercial',
-      shortDescription: 'Transformamos seu espaço em um imóvel inteligente. Mais economia e conforto no controle da sua casa ou negócio.',
+      slug: 'automacao',
+      title: 'Automação',
+      shortDescription: 'Transforme seu imóvel em um ambiente inteligente com mais conforto, economia e controle total.',
       icon: 'SmartHome',
-      longDescription: 'Soluções de automação para iluminação, climatização, segurança e entretenimento integradas via app.',
-      bullets: ['Cenas e rotinas', 'Integração por voz', 'Instalação e configuração']
+      longDescription: 'Integração de iluminação, clima e lazer gerenciados via aplicativo ou comando de voz.',
+      bullets: ['Cenas personalizadas', 'Controle por voz', 'Configuração profissional']
     },
     {
-      slug: 'segurança-eletrônica',
+      slug: 'seguranca-eletronica',
       title: 'Segurança Eletrônica',
-      shortDescription: 'Segurança de Alto Nível: Não instalamos apenas câmeras e alarmes, instalamos um Ecossistema Inteligente.',
+      shortDescription: 'Proteção avançada com ecossistemas inteligentes de monitoramento em tempo real.',
       icon: 'Shield',
-      longDescription: 'Projeto elétrico e instalação de carregadores residenciais e corporativos com monitoramento.',
-      bullets: ['Dimensionamento elétrico', 'Monitoramento', 'Suporte pós-instalação']
+      longDescription: 'Sistemas de CFTV IP e alarmes integrados para segurança total do seu patrimônio.',
+      bullets: ['Monitoramento remoto', 'Alertas inteligentes', 'Suporte técnico']
     },
     {
-      slug: 'som-inteligente',
-      title: 'Som Inteligente',
-      shortDescription: 'Desenvolvemos uma atmosfera sonora ideal com sistemas perfeitamente integrados à sua casa ou negócio inteligente.',
-      icon: 'Tool',
-      longDescription: 'Análise de infraestrutura, recomendações e planejamento para transformação digital.',
-      bullets: ['Auditoria de redes', 'Planejamento de upgrades', 'Relatório executivo']
+      slug: 'audio-e-video',
+      title: 'Som e Vídeo',
+      shortDescription: 'Sistemas de áudio e vídeo de alta fidelidade integrados ao seu estilo de vida.',
+      icon: 'Music',
+      longDescription: 'Projetos de sonorização ambiente e Home Theater com distribuição de sinal em ultra HD.',
+      bullets: ['Áudio multiroom', 'Salas de cinema', 'Calibração acústica']
     },
     {
       slug: 'redes-wifi',
       title: 'Redes & Wi‑Fi',
-      shortDescription: 'Projetos e instalação de redes corporativas.',
+      shortDescription: 'Conectividade robusta e sem interrupções para suportar todos os seus dispositivos.',
       icon: 'Wifi',
-      longDescription: 'Projetos de rede cabeada e sem fio com foco em cobertura, segurança e desempenho.',
-      bullets: ['Site survey', 'Segurança', 'Gerenciamento']
+      longDescription: 'Projetos de rede cabeada e Wi-Fi Mesh focados em cobertura total e segurança.',
+      bullets: ['Site Survey', 'Segurança de dados', 'Alta performance']
     },
     {
       slug: 'controle-acesso',
       title: 'Controle de Acesso',
-      shortDescription: 'Soluções de acesso para ambientes corporativos.',
+      shortDescription: 'Gestão inteligente de entrada e saída para empresas e condomínios.',
       icon: 'Lock',
-      longDescription: 'Sistemas de controle para portarias, salas seguras e áreas restritas.',
-      bullets: ['Biometria', 'Cartões', 'Integração com ERP']
+      longDescription: 'Sistemas modernos para portarias e áreas restritas com registros detalhados.',
+      bullets: ['Biometria facial', 'Tags e QR Codes', 'Relatórios de acesso']
     },
     {
       slug: 'nobreaks',
-      title: 'Nobreaks',
-      shortDescription: 'CFTV, sensores e monitoramento.',
-      icon: 'Shield',
-      longDescription: 'Instalamos Nobreaks capazes de manter todos seus sistemas funcionado por horas em caso de queda elétrica.',
-      bullets: ['CFTV', 'Integração de alarmes', 'Monitoramento 24/7']
+      title: 'Energia e Nobreaks',
+      shortDescription: 'Proteja seus equipamentos e garanta operação contínua mesmo em quedas de energia.',
+      icon: 'Battery',
+      longDescription: 'Dimensionamento de sistemas UPS para manter automação e servidores sempre ativos.',
+      bullets: ['Proteção de carga', 'Autonomia por horas', 'Manutenção preventiva']
     }
   ],
   portfolio: [
     {
       slug: 'escritorio-conectado',
       title: 'Escritório Conectado',
-      subtitle: 'Transformação digital de escritório regional',
-      summary: 'Projeto de redes e automação para filial regional com 120 pontos de rede.',
+      subtitle: 'Transformação digital corporativa',
+      summary: 'Projeto de redes e automação para sede com 120 pontos de conexão.',
       tags: ['redes', 'automação', 'cftv'],
       images: ['/public/placeholders/portfolio-1.jpg'],
-      challenge: 'Infraestrutura antiga e cobertura Wi‑Fi insuficiente.',
-      solution: 'Substituição de switches, novo cabeamento e implantação de APs de alta densidade.',
-      result: 'Latência reduzida, cobertura completa e monitoramento central.'
+      challenge: 'Instabilidade de sinal e infraestrutura obsoleta.',
+      solution: 'Novo cabeamento Cat6 e implantação de Wi-Fi de alta densidade.',
+      result: 'Conexão estável, sem pontos cegos e gestão centralizada.'
     }
   ]
 }

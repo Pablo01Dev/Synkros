@@ -3,7 +3,7 @@ import Hero from '../src/components/Hero'
 import ServicesGrid from '../src/components/ServicesGrid'
 import AboutSection from '../src/components/AboutSection'
 import ClientsMarquee from '../src/components/ClientsMarquee'
-import Portfolio from '../src/components/Portfolio'
+import Call from '../src/components/Call'
 import { site } from '../src/content/site'
 import styles from './pageLayout.module.css'
 
@@ -13,12 +13,12 @@ export default function Home() {
       <Hero />
 
       <section className={styles.section}>
-        <h2 className={styles.sectionTitle}>Nossos Servicos</h2>
+        <h2 className={styles.sectionTitle} id="servicos">Nossos Serviços</h2>
         <ServicesGrid services={site.services} />
       </section>
       <AboutSection />
       <ClientsMarquee />
-      <Portfolio />
+      <Call />
     </div>
   )
 }

@@ -4,7 +4,7 @@ import styles from './AboutSection.module.css'
 
 export default function AboutSection({ full = false }: { full?: boolean }) {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="empresa">
       <div className={styles.background}>
         <NeuralNetworkGrid />
       </div>

@@ -1,11 +1,11 @@
 "use client";
 
 import React from 'react';
-import styles from './Portfolio.module.css';
+import styles from './Call.module.css';
 
 export default function Portfolio() {
   return (
-    <section className={styles.ctaContainer}>
+    <section className={styles.ctaContainer} id='contato'>
       <div className={styles.contentWrapper}>
 
         <div className={styles.textContent}>
@@ -16,7 +16,7 @@ export default function Portfolio() {
 
           <p className={styles.description}>
             Pronto para um ambiente mais inteligente,<br />
-            confortável e eficiente? <strong>A Kalê Tecnologia<br />
+            confortável e eficiente? <strong>A DLAP<br />
               é a escolha certa.</strong>
           </p>
 

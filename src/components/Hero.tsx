@@ -17,9 +17,9 @@ export default function Hero() {
       >
         <div className={styles.grid}>
           <div>
-            <h1 className={styles.title}>Automacao e infraestrutura com foco em resultado</h1>
+            <h1 className={styles.title}>Automação e infraestrutura com foco em resultado</h1>
             <p className={styles.description}>
-              Solucoes sob medida para residencias e empresas, integradas, seguras e faceis de usar.
+              Soluções sob medida para residências e empresas, integradas, seguras e fáceis de usar.
             </p>
             <div className={styles.actions}>
               <Link href="/empresa" className={styles.primaryButton}>Saiba mais</Link>

@@ -61,13 +61,41 @@ a {
 
 h1,
 h2,
+h3,
+h4,
+h5,
+div,
 p,
 h3,
 link,
+button,
 a {
   font-family: Noto Sans, sans-serif;
 }
 
 p {
   font-size: 1rem;
+}
+
+/* 1. Suaviza a rolagem de forma nativa */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 2. Resolve o problema da Navbar cobrindo o conteúdo */
+/* Substitua os IDs abaixo pelos IDs que você usa nas suas <section> */
+#home, 
+#empresa, 
+#servicos, 
+#portfolio, 
+#contato {
+  /* Defina aqui a altura exata da sua Navbar (ex: 80px ou 100px) */
+  scroll-margin-top: 90px; 
+}
+
+/* 3. Ajuste opcional para navegadores que não suportam bem o scroll-behavior */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
