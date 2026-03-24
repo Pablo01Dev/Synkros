@@ -1,4 +1,4 @@
-/* Container principal com o fundo azul */
+﻿/* Container principal com o fundo azul */
 .ctaContainer {
   background: #258f3e;
   background: linear-gradient(90deg, rgb(7, 102, 29) 7%, rgba(64, 182, 89, 1) 100%);
@@ -11,7 +11,7 @@
   margin: 5rem 0;
 }
 
-/* Limitador de largura para centralizar o conteúdo em telas grandes */
+/* Limitador de largura para centralizar o conteudo em telas grandes */
 .contentWrapper {
   max-width: 1100px;
   width: 100%;
@@ -70,7 +70,7 @@
   margin: 0;
 }
 
-/* Estilo do Botão Outline */
+/* Estilo do Botao Outline */
 .ctaButton {
   background-color: #ffffff;
   color: #0e4200;
@@ -90,9 +90,6 @@
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(5, 56, 9, 0.15);
   transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-
-  /* Animação de Entrada */
-  animation: slideInUp 0.8s ease-out forwards;
 }
 
 /* Efeito de Hover (Passar o mouse) */
@@ -100,7 +97,6 @@
   background-color: #003805;
   color: #ffffff;
   transform: translateY(-3px);
-  /* Levanta levemente */
   box-shadow: 0 8px 25px rgba(5, 56, 9, 0.3);
 }
 
@@ -110,34 +106,18 @@
   box-shadow: 0 4px 10px rgba(5, 56, 9, 0.2);
 }
 
-/* Definição da Animação de Entrada */
-@keyframes slideInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* --- ESTILOS DA COLUNA DA IMAGEM --- */
 .imageContent {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .imageWrapper {
   position: relative;
   width: 100%;
   max-width: 450px;
-  /* Tamanho máximo da imagem */
-
 }
 
 .mainImage {
@@ -154,7 +134,6 @@
   bottom: 0;
   left: 0;
   background-color: #009900;
-  /* Verde da folha */
   padding: 1rem;
   width: 60px;
   height: 60px;
@@ -162,10 +141,10 @@
   justify-content: center;
   align-items: center;
   transform: translate(-20%, 20%);
-  /* Desloca o ícone levemente para fora da foto principal */
 }
 
 .leafIconBadge img {
   width: 100%;
   height: auto;
 }
+

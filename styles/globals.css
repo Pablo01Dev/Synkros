@@ -43,7 +43,12 @@ body {
 }
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(circle at 10% 20%, rgba(65, 204, 121, 0.12), transparent 28%),
+    radial-gradient(circle at 85% 8%, rgba(39, 181, 97, 0.1), transparent 30%),
+    linear-gradient(180deg, #030303 0%, #080b10 38%, #050505 100%);
+  background-color: var(--background);
+  background-attachment: fixed;
   color: var(--foreground);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -77,6 +82,40 @@ p {
   font-size: 1rem;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 26px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes softPop {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 /* 1. Suaviza a rolagem de forma nativa */
 html {
   scroll-behavior: smooth;
@@ -97,5 +136,13 @@ html {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

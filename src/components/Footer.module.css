@@ -1,11 +1,8 @@
 ﻿.footer {
   margin-top: 5rem;
-  /* Mais respiro entre o conteúdo e o rodapé */
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  /* Linha mais sutil */
   background: rgba(15, 15, 15, 0.9);
   backdrop-filter: blur(12px);
-  /* Efeito de vidro moderno */
   color: #f8fafc;
 }
 
@@ -13,15 +10,12 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 4rem 1.5rem 2rem;
-  /* Aumentei o padding superior */
 }
 
 .grid {
   display: grid;
   gap: 3rem;
-  /* Mais espaço entre as colunas */
   grid-template-columns: 1.5fr 1fr 1fr;
-  /* Coluna da marca maior que as outras */
 }
 
 .title {
@@ -38,7 +32,6 @@
   letter-spacing: 0.1em;
   margin-bottom: 1.25rem;
   color: #23742a;
-  /* Usando o verde do seu botão anterior como destaque */
 }
 
 .text {
@@ -47,24 +40,19 @@
   max-width: 300px;
 }
 
-/* Container que envolve os links (ex: uma div ou ul) */
 .links-column {
   display: flex;
   flex-direction: column;
-  /* Força um embaixo do outro */
   gap: 0.75rem;
-  /* Espaçamento vertical entre eles */
 }
 
 .link {
   display: block;
-  /* Garante que ocupe a largura total disponível */
   color: #cbd5e1;
   text-decoration: none;
   font-size: 0.9rem;
   transition: all 0.2s ease;
   margin-bottom: 0;
-  /* O gap já cuida do espaçamento agora */
 }
 
 .link:hover {
@@ -81,7 +69,6 @@
   color: #64748b;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
@@ -95,7 +82,7 @@
 
   .link:hover {
     transform: none;
-    /* Remove o deslocamento lateral no mobile */
     color: #23742a;
   }
 }
+
