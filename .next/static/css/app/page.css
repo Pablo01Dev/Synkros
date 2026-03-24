@@ -165,11 +165,11 @@
 }
 
 .AboutSection_compact__JfMSK {
-  max-width: 45%;
+  max-width: 65%;
 }
 
 .AboutSection_full__j0T6P {
-  max-width: 70%;
+  max-width: 80%;
 }
 
 .AboutSection_video__5gPWY {
@@ -185,6 +185,36 @@
   background: rgba(34, 197, 94, 0.05);
   pointer-events: none;
   mix-blend-mode: overlay;
+}
+
+/* ... seus estilos anteriores ... */
+
+.AboutSection_muteButton__FXzCu {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.AboutSection_muteButton__FXzCu:hover {
+  background: rgba(34, 197, 94, 0.8); /* Cor verde para combinar com seu overlay */
+  transform: scale(1.1);
+}
+
+.AboutSection_muteButton__FXzCu:active {
+  transform: scale(0.95);
 }
 
 @media (max-width: 767px) {
@@ -431,6 +461,7 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/components/Hero.module.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/
 .Hero_hero__T3Fr4 {
+  background-image: url('/placeholders/portfolio-1.png');
   position: relative;
   overflow: hidden;
   border-radius: 12px;
@@ -523,8 +554,14 @@
   .Hero_illustrationCol__MMlcS {
     display: block;
   }
+
 }
 
+@media (max-width: 767px) {
+  .Hero_hero__T3Fr4 {
+    background: transparent;
+  }
+}
 /*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/components/ServicesGrid.module.css ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************/

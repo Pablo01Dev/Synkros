@@ -1,4 +1,5 @@
 ﻿.hero {
+  background-image: url('/placeholders/portfolio-1.png');
   position: relative;
   overflow: hidden;
   border-radius: 12px;
@@ -89,5 +90,12 @@
 
   .illustrationCol {
     display: block;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .hero {
+    background: transparent;
   }
 }

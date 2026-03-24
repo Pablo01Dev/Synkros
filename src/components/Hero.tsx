@@ -7,7 +7,7 @@ import styles from './Hero.module.css'
 
 export default function Hero() {
   return (
-    <section className={styles.hero} style={{ backgroundImage: "url('/placeholders/portfolio-1.png')" }}>
+    <section className={styles.hero}>
       <div className={styles.overlay} aria-hidden="true" />
       <motion.div
         className={styles.content}
