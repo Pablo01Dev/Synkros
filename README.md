@@ -1,2 +1,2 @@
-# Dlap
+# Synkros
 Site de automações
