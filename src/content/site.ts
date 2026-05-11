@@ -7,8 +7,8 @@ export const site = {
   contacts: {
     whatsappNumber: '+5511999999999',
     whatsappLink: 'https://wa.me/5511999999999',
-    email: 'contato@dlap.com.br',
-    phone: '+55 (11) 4000-0000'
+    email: 'synkros.comercial@gmail.com',
+    phone: '(21) 98088-2081'
   },
   services: [
     {

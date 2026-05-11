@@ -28,8 +28,8 @@ export default function Portfolio() {
 
           <p className={styles.description}>
             Pronto para um ambiente mais inteligente,<br />
-            confortável e eficiente? <strong>A DLAP<br />
-              é a escolha certa.</strong>
+            confortável e eficiente?<br />
+             <strong>Synkros é a escolha certa.</strong>
           </p>
 
           <p className={styles.subDescription}>
