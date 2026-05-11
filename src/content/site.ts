@@ -5,8 +5,8 @@ export const site = {
     description: 'Projetamos soluções de automação, redes e infraestrutura tecnológica para residências e empresas.'
   },
   contacts: {
-    whatsappNumber: '+5511999999999',
-    whatsappLink: 'https://wa.me/5511999999999',
+    whatsappNumber: '+5521980882081',
+    whatsappLink: 'https://wa.me/5521980882081',
     email: 'synkros.comercial@gmail.com',
     phone: '(21) 98088-2081'
   },

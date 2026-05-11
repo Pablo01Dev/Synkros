@@ -32,9 +32,6 @@ export default function Portfolio() {
              <strong>Synkros é a escolha certa.</strong>
           </p>
 
-          <p className={styles.subDescription}>
-            Invista na inteligência que seu espaço merece!
-          </p>
 
           <motion.button
             className={styles.ctaButton}
