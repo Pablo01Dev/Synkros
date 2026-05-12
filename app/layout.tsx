@@ -5,7 +5,7 @@ import { Footer } from '../src/components/Footer'
 import styles from './layout.module.css'
 
 export const metadata = {
-  title: 'Dlap Automação - Tecnologia e Automação',
+  title: 'Synkros - Automação, Redes e Soluções Inteligentes',
   description: 'Soluções de automação, redes e infraestrutura para empresas e residências.'
 }
 

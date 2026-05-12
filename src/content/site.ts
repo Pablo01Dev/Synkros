@@ -1,6 +1,6 @@
 export const site = {
   company: {
-    name: 'Dlap Automação',
+    name: 'Synkros',
     slogan: 'Tecnologia para espaços inteligentes',
     description: 'Projetamos soluções de automação, redes e infraestrutura tecnológica para residências e empresas.'
   },
