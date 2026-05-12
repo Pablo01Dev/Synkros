@@ -283,10 +283,26 @@
 }
 
 .Call_title__vGR1U {
-  font-size: 3rem;
-  font-weight: 800;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+  /* Um pouco mais de aperto lateral para dar estilo */
   line-height: 1.2;
+  /* "Esmaga" o espaço vertical entre as linhas */
   margin: 0;
+  display: block;
+  /* Mude para block para o line-height agir melhor sobre o <br/> */
+  text-align: left;
+  /* Garante o alinhamento à esquerda */
+}
+
+.Call_title__vGR1U span {
+  font-size: 2.3rem;
+  display: block;
+  /* Faz o span se comportar como uma linha independente */
+  margin-bottom: -1rem;
+  font-weight: 700;
+  /* Controle fino: ajuste aqui se quiser separar só um pouco */
 }
 
 .Call_description__3gBi_ {
@@ -378,8 +394,6 @@
   width: 100%;
   height: auto;
 }
-
-
 /*!************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/components/ClientsMarquee.module.css ***!
   \************************************************************************************************************************************************************************************************************************************************************************************/

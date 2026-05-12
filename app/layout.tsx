@@ -5,7 +5,7 @@ import { Footer } from '../src/components/Footer'
 import styles from './layout.module.css'
 
 export const metadata = {
-  title: 'Synkros - Automação, Redes e Soluções Inteligentes',
+  title: 'Synkros - Automações',
   description: 'Soluções de automação, redes e infraestrutura para empresas e residências.'
 }
 

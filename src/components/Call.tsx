@@ -23,12 +23,8 @@ export default function Portfolio() {
           transition={{ duration: 0.55, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
         >
           <h1 className={styles.title}>
-            Pronto para transformar<br /> o seu imóvel?
+            <span>Pipoca na mão e luz acesa?</span><br/>Não precisa levantar do sofá,<br/> a gente resolve!
           </h1>
-
-          <p className={styles.description}>
-            <strong>Synkros é a escolha certa.</strong>
-          </p>
 
           <motion.a
             href="https://api.whatsapp.com/send/?phone=5521980882081&text&type=phone_number&app_absent=0"
@@ -44,7 +40,7 @@ export default function Portfolio() {
               ease: [0.22, 1, 0.36, 1]
             }}
           >
-            Solicite uma consultoria
+            Solicitar consultoria gratuita
           </motion.a>
         </motion.div>
 
