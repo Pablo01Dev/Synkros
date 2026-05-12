@@ -23,7 +23,7 @@ export default function Portfolio() {
           transition={{ duration: 0.55, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
         >
           <h1 className={styles.title}>
-            Transforme Seu<br /> Espaço Agora.
+            Transforme seu<br /> imóvel agora!
           </h1>
 
           <p className={styles.description}>
@@ -32,18 +32,22 @@ export default function Portfolio() {
             <strong>Synkros é a escolha certa.</strong>
           </p>
 
-
-          <motion.button
+          <motion.a
+            href="https://api.whatsapp.com/send/?phone=5521980882081&text&type=phone_number&app_absent=0"
+            target="_blank"
+            rel="noopener noreferrer"
             className={styles.ctaButton}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.8 }}
-            transition={{ duration: 0.45, delay: 0.24, ease: [0.22, 1, 0.36, 1] }}
+            transition={{
+              duration: 0.45,
+              delay: 0.24,
+              ease: [0.22, 1, 0.36, 1]
+            }}
           >
-            <a href="https://api.whatsapp.com/send/?phone=5521980882081&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
-              Solicite uma consultoria
-            </a>
-          </motion.button>
+            Solicite uma consultoria
+          </motion.a>
         </motion.div>
 
         <motion.div
@@ -65,4 +69,3 @@ export default function Portfolio() {
     </motion.section>
   )
 }
-
