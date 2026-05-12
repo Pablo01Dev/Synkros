@@ -23,12 +23,10 @@ export default function Portfolio() {
           transition={{ duration: 0.55, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
         >
           <h1 className={styles.title}>
-            Transforme seu<br /> imóvel agora!
+            Pronto para transformar<br /> o seu imóvel?
           </h1>
 
           <p className={styles.description}>
-            Pronto para um ambiente mais inteligente,<br />
-            confortável e eficiente?<br />
             <strong>Synkros é a escolha certa.</strong>
           </p>
 
