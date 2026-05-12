@@ -29,7 +29,7 @@ export default function Portfolio() {
           <p className={styles.description}>
             Pronto para um ambiente mais inteligente,<br />
             confortável e eficiente?<br />
-             <strong>Synkros é a escolha certa.</strong>
+            <strong>Synkros é a escolha certa.</strong>
           </p>
 
 
@@ -40,7 +40,9 @@ export default function Portfolio() {
             viewport={{ once: true, amount: 0.8 }}
             transition={{ duration: 0.45, delay: 0.24, ease: [0.22, 1, 0.36, 1] }}
           >
-            SOLICITE UMA CONSULTORIA
+            <a href="https://api.whatsapp.com/send/?phone=5521980882081&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+              Solicite uma consultoria
+            </a>
           </motion.button>
         </motion.div>
 
